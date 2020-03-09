@@ -2,6 +2,9 @@ package com.example.lab4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.media.SoundPool;
 import android.os.Bundle;
 import android.text.Layout;
 import android.view.View;
@@ -11,9 +14,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 public class MainActivity extends AppCompatActivity {
 
+    private SoundPool sounds;
+    private int sExplosion;
     // 0 = x, 1 = o
     int activePlayer = 0;
     boolean gameIsActive = true;
@@ -58,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
                         winner = "Player1 ->  X";
                     }
                    // Toast.makeText(MainActivity.this, "AI CASTIGAT", Toast.LENGTH_LONG).show();
+                    MediaPlayer song = MediaPlayer.create(this, R.raw.win);
+                    song.start();
+
                     TextView winnerMsg = (TextView)  findViewById(R.id.winnerMsg);
                     winnerMsg.setText(winner + " has won!");
                     LinearLayout layout = (LinearLayout)findViewById(R.id.playAgainLayout);
@@ -72,6 +79,10 @@ public class MainActivity extends AppCompatActivity {
                     }
                     if (gameIsOver) {
                        // Toast.makeText(MainActivity.this, "EGALITATE", Toast.LENGTH_LONG).show();
+                        MediaPlayer song = MediaPlayer.create(this, R.raw.draw);
+                        song.start();
+
+
                         TextView winnerMsg = (TextView) findViewById(R.id.winnerMsg);
                         winnerMsg.setText("It is a DRAW!");
                         LinearLayout layout = (LinearLayout)findViewById(R.id.playAgainLayout);
