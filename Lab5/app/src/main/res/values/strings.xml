@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab5</string>
+    <string name="list_of_cars">Car brands</string>
+    <string name="add_car_btn">Add</string>
+</resources>
