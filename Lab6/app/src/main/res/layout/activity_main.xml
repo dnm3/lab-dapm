@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimaryDark">
+
+   <EditText
+       android:id="@+id/editTxt"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="@string/editTxt"
+       android:layout_marginTop="50dp"
+       android:textColor="#FFF"
+
+
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="90dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/icn_android"
+            android:text="@string/saveBtn"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="228dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorAccent"
+            android:text="@string/nextBtn"
+            android:textColor="#FFF" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
