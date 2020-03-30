@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#DCD281">
+
+
+    <Button
+        android:id="@+id/listen"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:background="@color/blue"
+        android:text="@string/listen"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/lavender"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/voice"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:text="@string/openMic"
+        android:background="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/lavender"/>
+</RelativeLayout>

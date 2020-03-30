@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#8E982A">
+    <Button
+        android:id="@+id/button1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:text="Fragment 1"
+        android:textColor="#E8E1A4"
+        android:background="@color/blue"
+        android:onClick="selectFrag"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:onClick="selectFrag"
+        android:layout_marginTop="10dp"
+        android:background="@color/blue"
+        android:text="Fragment 2"
+        android:textColor="#E8E1A4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <fragment
+        android:name="com.example.lab7ex2.First"
+        android:id="@+id/fragment_place"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
