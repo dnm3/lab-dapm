@@ -4,4 +4,3 @@
 
 * Grupa: 1240F
 
-* Echipa: MIU Daniel si DRAGAN Dragos Bogdan
